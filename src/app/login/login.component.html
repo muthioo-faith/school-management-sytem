@@ -1,0 +1,286 @@
+<!-- <mat-card>
+
+<p></p>
+<mat-card class="card">
+<h1>Welcome to Smart learning<br>
+tracking system
+</h1>
+<img src="../../assets/log.png" style="width: 500px;margin-top: -90px;height: 400px;margin-left: 660px;"> 
+
+<form class="example-form"form [formGroup]="jobForm" (ngSubmit)="save()">
+    <h4>Your Name</h4>
+
+    <table class="example-full-width" cellspacing="0"><tr>
+
+      <td><mat-form-field class="example-full-width">
+        <mat-label>First name</mat-label>
+        <input matInput formControlName="first_name">
+      </mat-form-field></td>
+
+      <td><mat-form-field class="example-full-width">
+        <mat-label>Second name</mat-label>
+        <input matInput  formControlName="second_name">
+      </mat-form-field></td>
+    
+    </tr></table>
+
+    <h4>Name of your School</h4>
+
+    <table class="example-full-width" cellspacing="0"><tr>
+
+      <td><mat-form-field class="example-full-width">
+        <mat-label>Name of your School</mat-label>
+        <input matInput  formControlName="Name_school">
+      </mat-form-field></td>
+    
+
+      <td><mat-form-field class="example-full-width">
+        <mat-label>Admission No/school code</mat-label>
+        <input matInput  formControlName="Admission_No">
+      </mat-form-field></td>
+
+    </tr></table>
+  
+    <table class="example-full-width" cellspacing="0"><tr>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>Phone Number</mat-label>
+        <input matInput placeholder="Must be valid"  formControlName="phone_number" >
+      </mat-form-field></td>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>Country</mat-label>
+        <input matInput placeholder="Ex. Kenya" formControlName="country">
+      </mat-form-field></td>
+  
+    </tr></table>
+    
+
+    <h4>Your role in the school</h4>
+<mat-form-field appearance="fill">
+  <mat-label>Choose an option</mat-label>
+  <select matNativeControl [disabled]="disableSelect.value">
+    <option value="" selected></option>
+    <option value="volvo">Teacher</option>
+    <option value="audi">Parent</option>
+    <option value="mercedes">Principal</option>
+    <option value="audi">Student</option>
+    <option value="audi">School Admin </option>
+    <option value="audi">School Owner</option>
+
+  </select>
+</mat-form-field>
+
+<button mat-flat-button color="warn" style="margin-left: 120px;" type="submit">Submit</button>
+
+  </form>
+  </mat-card>
+
+
+</mat-card> -->
+
+
+
+
+
+
+
+<mat-card>
+
+  <p></p>
+<mat-card class="card">
+<h1>Welcome to Smart learning<br>
+tracking system
+</h1>
+<img src="../../assets/log.png" style="width: 500px;margin-top: -90px;height: 400px;margin-left: 660px;"> 
+
+      <form [formGroup]="jobForm" (ngSubmit)="save()" class="example-form">
+        <table class="example-full-width" cellspacing="0"><tr>
+
+        <div class="mb-3">
+              <!-- <h4>Your Name</h4> -->
+
+          <label for="firstName" class="form-label">First Name</label>
+
+
+          <div
+class="alert alert-danger"
+*ngIf="
+  firstName?.invalid && (firstName?.touched || firstName?.dirty)
+"
+>
+<div *ngIf="firstName?.errors?.['required']">
+  First Name can't be emtpy
+</div>
+</div>
+      
+          <td><mat-form-field class="example-full-width">
+            <mat-label>First Name</mat-label>
+            <input matInput placeholder="" formControlName="firstName">
+          </mat-form-field></td>
+          
+        </div>
+        <div class="mb-3">
+          <label for="lastName" class="form-label">Name of School</label>
+       
+
+          <td><mat-form-field class="example-full-width">
+            <mat-label>Name of School</mat-label>
+            <input matInput placeholder="" formControlName="lastName">
+          </mat-form-field></td>
+        </div>
+        
+
+          
+          <div class="row">
+            <div class="col col-md-6">
+              <div class="mb-3">
+                <label for="email" class="form-label">Last Name</label>
+          
+
+               <td> <mat-form-field class="example-full-width">
+                  <mat-label>Last Name </mat-label>
+                  <input matInput placeholder="" formControlName="lastName">
+                </mat-form-field></td>
+              </div>
+            </div>
+            <div class="col col-md-6">
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+               
+        
+                 <td><mat-form-field class="example-full-width">
+                    <mat-label>Phone</mat-label>
+                    <input matInput placeholder="" formControlName="firstName">
+                  </mat-form-field></td>
+                </div>
+              
+
+              </div>
+          </div>
+
+
+  <!-- kkk -->
+          <div class="col col-md-63">
+            <div class="mb-33">
+              <label for="phone" class="form-label">Role</label>
+             
+      
+               <td><mat-form-field class="example-full-width">
+                  <mat-label>role</mat-label>
+                  <!-- <mat-form-field appearance="fill">
+                    <mat-label>Choose an option</mat-label>
+                    <select matNativeControl [disabled]="disableSelect.value">
+                      <option value="" selected></option>
+                      <option value="volvo">Teacher</option>
+                      <option value="audi">Parent</option>
+                      <option value="mercedes">Principal</option>
+                      <option value="audi">Student</option>
+                      <option value="audi">School Admin </option>
+                      <option value="audi">School Owner</option>
+                  
+                    </select>
+                  </mat-form-field> -->
+
+                  <input matInput placeholder="" formControlName="Password">
+                </mat-form-field></td>
+              </div>
+            
+
+            </div>
+            <!-- <label class="form-label">Prefered Contact</label>
+            <select
+              class="form-select"
+              formControlName="contactType"
+              aria-label="Default select example"
+            >
+                <option value="" selected></option>
+                      <option value="volvo">Teacher</option>
+                      <option value="audi">Parent</option>
+                      <option value="mercedes">Principal</option>
+                      <option value="audi">Student</option>
+                      <option value="audi">School Admin </option>
+                      <option value="audi">School Owner</option>
+            </select> -->
+
+
+
+          
+          <!-- ll -->
+          <div class="col col-md-69" style="  margin-left: 350px;margin-top: -100px;">
+            <div class="mb-39">
+              <label for="phone" class="form-label">Phone</label>
+             
+      
+               <td><mat-form-field class="example-full-width">
+                  <mat-label>Phone </mat-label>
+                  <input matInput placeholder="" formControlName="firstName">
+                </mat-form-field></td>
+              </div>
+            
+
+            </div>
+        <div class="mb-3" formArrayName="skills">
+          <div class="row">
+            <div class="col col-md-4 offset-md-4">
+              <button style="margin-top: 250px;margin-left: -330px;"
+                type="button"
+                (click)="addASkillFormGroup()"
+                class="btn btn-primary"
+              >
+                Add A Skill
+              </button>
+            </div>
+          </div>
+          <ng-container
+            *ngFor="let skillForm of skillsForms.controls; let i = index"
+          >
+            <div class="row1" [formGroupName]="i">
+              <div class="col col-md-5">
+                <div class="mb-3">
+                  <label [for]="'programLanguage' + i" class="form-label"
+                    >Programing Language</label
+                  >
+                  <input
+                    type="text"
+                    class="example-full-width"
+                    [id]="'programLanguage' + i"
+                    formControlName="programLanguage"
+                  />
+             
+                </div>
+              </div>
+              <div class="col col-md-5">
+                <div class="mb-3"> 
+                  <label [for]="'experience' + i" class="form-label"
+                    >Experience</label
+                  >
+                  <input
+                    type="text"
+                    class="example-full-width"
+                    [id]="'experience' + i"
+                    formControlName="experience"
+                  />
+
+                </div> 
+              </div>
+              <div class="col col md-2">
+                <button
+                  class="btn btn-danger mt-4"
+                  type="button"
+                  (click)="removeSkillFormGroup(i)"
+                >
+                  Delete
+                </button>
+              </div>
+            </div>
+          </ng-container>
+        </div>
+        
+        <button mat-flat-button color="warn" style="margin-left: 420px;" type="submit">Submit</button>
+      </tr></table>
+
+      </form>
+    <div class="col col-md-4">
+      <div style="position: fixed">{{ preview }}</div>
+    </div>
+
+</mat-card>

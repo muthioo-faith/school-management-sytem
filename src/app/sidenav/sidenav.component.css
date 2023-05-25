@@ -1,0 +1,140 @@
+
+
+
+.cont2{
+  height:635px;
+  width: 160px; ;
+  background-color: #172540;
+}
+
+  .example-container {
+    width: 1260px;
+    margin: 10px;
+    margin-left: 160px;
+    /* background-color:aliceblue; */
+
+
+  }
+  .nav{
+    /* width: 1260px; */
+    margin: 10px;;
+    border-radius: 1px;
+    margin-left: 300px;
+    /* background-color:aliceblue; */
+
+  }
+
+/* 
+  .nav img{
+    width: 145px;
+  } */
+ 
+.home {
+    margin-top: 60px;
+    width: 50px;
+    height: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+.folder {
+  margin-top: 60px;
+  width: 100px;
+  height: 40px;
+  border-radius: 15px;
+
+  text-align: center;
+}
+.Home{
+  margin-top: 60px;
+}
+
+p{
+    color: white;
+    margin-left: 55px;
+    margin-top: -8px;
+}
+
+     
+h5{
+    color: white;
+    margin-left: 44px;
+    font-size: 15px;
+    margin-top: -8px;
+}
+.active-link{
+    color: #f9a61d !important;
+}
+
+.mat-mdc-list-item-icon {
+  color: rgba(0, 0, 0, 0.54);
+} 
+.icons{
+  margin-top: -110px;
+}
+
+h4{
+  color: red;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-top: 40px;
+}
+.items p{
+  color: aliceblue;
+  margin-top: 40px;
+}
+.back{
+background-color:white;
+height:585px;
+width: 400px;
+font-size: 30px;
+margin-left: 159px;
+margin-top: -585px;
+}
+
+.back p{
+  color: black;
+  margin-top: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.uppercard{
+  background-color: red;
+  margin-left: 160px;
+  margin-top: -20px;
+  width: 1130px;
+  height: 50px;
+}
+mat-card{
+background-color: #35d1d1;
+height:585px;
+width: 400px;
+font-size: 30px;
+margin-left:560px;
+margin-top: -390px;
+}
+.profile h3{
+  margin-left:970px;
+  margin-top: -557px;
+font-family: 'Times New Roman', Times, serif;
+}
+.flex {
+  display: flex;
+  margin-left:790px;
+  background-color: rgb(39, 196, 196);
+  font-size: 15px;
+}
+.flexx {
+  display: flex;
+  margin-left:790px;
+  background-color: rgb(39, 196, 196);
+  font-size: 15px;
+  margin-top: -30px;
+}
+
+
+
+/* kkkkkkkkkkkkkkkkkkk */
+
+
+
+
+

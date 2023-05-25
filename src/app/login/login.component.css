@@ -1,0 +1,47 @@
+mat-card {
+    background-color: #575553;
+    height: 620px;
+    border-radius: 30px;
+}
+.card{
+    background-color: #ffffff;
+    width: 1230px;
+    height: 570px;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+h1{
+    margin-left: 50px;
+    margin-top: 20px;
+    font-family:  'Arial Narrow', sans-serif;
+}
+
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    margin-left: 20px;
+    width: 100%;
+    /* display: flex; */
+    margin-top: -290px;
+
+    
+  }
+  
+  .example-full-width {
+    width: 100%;
+
+  }
+  
+  td {
+    padding-right: 8px;
+  } 
+
+  h4{
+    color: red;
+  }
+  .row{
+    margin-left: 350px;
+    margin-top: -200px;
+  }
